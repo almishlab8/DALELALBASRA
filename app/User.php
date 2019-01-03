@@ -70,5 +70,10 @@ class User extends Authenticatable
       return $this->hasMany(Employee::class);
     }
 
+    public function sponsors()
+    {
+      return $this->hasMany(Sponsors::class);
+    }
+
 
 }

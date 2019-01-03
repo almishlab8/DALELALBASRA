@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ asset('lib/bootstrap-fileupload/bootstrap-fileupload.css') }}" />
 
+
   <!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
@@ -194,6 +195,14 @@ ul.sidebar-menu li a i {
               <li><a href="/employees"> الموظفين</a></li>
             </ul>
           </li>
+
+          <li>
+            <a href="/sponsors">
+              <i class="fa fa-handshake-o"></i>
+                <span>المسوقيين</span>
+              </a>
+          </li>
+
 
         </ul>
         <!-- sidebar menu end-->

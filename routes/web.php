@@ -13,6 +13,16 @@
 
 Route::get('/', 'companiesController@index')->middleware('auth');
 
+
+//==========  marketing  =========
+Route::get('sponsors', 'SponsoreController@index')->middleware('auth');
+Route::post('add', 'SponsoreController@add')->middleware('auth');
+Route::get('delete-sponsor/{id}', 'SponsoreController@delete')->middleware('auth');
+Route::post('edit-sponsor/{id}', 'SponsoreController@edit')->middleware('auth');
+Route::get('edit-sponsor/{id}', 'SponsoreController@edit')->middleware('auth');
+
+
+
 //==========  marketing  =========
 Route::get('marketing', 'market@index')->middleware('auth');
 Route::post('addmarketting', 'market@addmarket')->middleware('auth');
